@@ -1,3 +1,45 @@
-h1{
-    color:red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+a {
+  color: green;
+  font-family: "Fraunces";
+}
+
+.nav {
+  display: flex;
+  gap: 2px;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: purple;
+  /* max-width:1000px */
+  /* align-items: flex-end; */
+  /* flex-direction: row; */
+}
+
+.image {
+  border-radius: 10px;
+}
+.list {
+  display: flex;
+}
+.container {
+  max-width: 60%;
+  word-spacing: 0.4em;
+  margin-left: 20px;
+  /* text-indent: 2em; */
+  line-height: 1.5em;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
 }
