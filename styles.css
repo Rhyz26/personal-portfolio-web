@@ -113,5 +113,23 @@ span {
 }
 .contacts{
     padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
 
+}
+.content{
+    text-align: center;
+    max-width: 400px;
+    margin-left: 450px;
+    margin-top: 30px;
+}
+.blog{
+    display: flex;
+    gap:2rem;
+    justify-content: space-evenly;
+
+}
+a{
+    text-decoration: none;
 }
