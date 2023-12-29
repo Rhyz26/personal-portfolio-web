@@ -1,45 +1,117 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
-  color: red;
+    color: red;
 }
+
 a {
-  color: green;
-  font-family: "Fraunces";
+    color: green;
+    font-family: "Fraunces";
 }
 
 .nav {
-  display: flex;
-  gap: 2px;
-  justify-content: space-evenly;
-  padding-top: 20px;
-  padding-bottom: 2px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-color: purple;
-  /* max-width:1000px */
-  /* align-items: flex-end; */
-  /* flex-direction: row; */
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-self: flex-end;
+
+    padding-top: 10px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: purple;
+    /* max-width:1000px */
+    /* align-items: flex-end; */
+    /* flex-direction: row; */
 }
 
 .image {
-  border-radius: 10px;
+    border-radius: 10px;
 }
+
 .list {
-  display: flex;
+    display: flex;
 }
+
 .container {
-  max-width: 60%;
-  word-spacing: 0.4em;
-  margin-left: 20px;
-  /* text-indent: 2em; */
-  line-height: 1.5em;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-around;
+    max-width: 90%;
+    word-spacing: 0.4em;
+    margin-left: 50px;
+    /* text-indent: 2em; */
+    line-height: 1.5em;
+    font-size: 20px;
+    display: flex;
+    /* justify-content: center; */
+    gap: 8rem;
+    padding-top: 30px;
+}
+
+span {
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#project {
+    color: purple;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    gap: em;
+    justify-content: space-evenly;
+}
+
+.image1 {
+    border: 3px solid red;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 3%;
+}
+
+.image1:hover {
+    transform: scale(1.1);
+    border-color: solid #4caf50;
+}
+
+.image2 {
+    border: 3px solid red;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 3%;
+}
+
+.image2:hover {
+    transform: scale(1.1);
+    border-color: #4caf50;
+}
+
+.image3 {
+    border: red;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    outline-offset: 0.25rem;
+    border-radius: 3%;
+    padding: 20px;
+}
+
+.image3:hover {
+    transform: scale(1.1);
+    border-color: #4caf50;
+}
+.contacts{
+    padding-top: 20px;
+
 }
