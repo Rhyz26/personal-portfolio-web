@@ -16,21 +16,40 @@ a {
 .nav {
     display: flex;
     gap: 8rem;
-    justify-content: center;
-    align-self: flex-end;
+    justify-content: space-around;
+    width:100%;
+    /* align-self: flex-end; */
 
-    padding-top: 10px;
-    padding-bottom: 2px;
+    padding-top: 30px;
+    /* padding-bottom: 2px; */
     margin-bottom: 10px;
-    margin-top: 10px;
-    background-color: purple;
-    /* max-width:1000px */
+    /* margin-top: 10px; */
+    background-color: white;
+    /* margin-right: 40px; */
+    /* width:1000px; */
+    overflow: hidden;
+    top: 0;
+    position: fixed;
     /* align-items: flex-end; */
     /* flex-direction: row; */
+
+    /* float: left; */
+    color: white;
+    text-align: center;
+    /* padding-bottom:20px; */
+    text-decoration: none;
+    transition: border-bottom 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 1px solid yellow;
 }
 
 .image {
     border-radius: 10px;
+    margin-left: 2px;
+    padding-bottom: 10px;
+    
 }
 
 .list {
@@ -46,8 +65,8 @@ a {
     font-size: 20px;
     display: flex;
     /* justify-content: center; */
-    gap: 8rem;
-    padding-top: 30px;
+    gap: 20px;
+    padding-top: 200px;
 }
 
 span {
@@ -69,7 +88,7 @@ span {
 }
 
 .image1 {
-    border: 3px solid red;
+    border: 3px solid purple;
 
     overflow: hidden;
 
@@ -84,7 +103,7 @@ span {
 }
 
 .image2 {
-    border: 3px solid red;
+    border: 3px solid purple;
     overflow: hidden;
 
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -98,11 +117,11 @@ span {
 }
 
 .image3 {
-    border: red;
+    border: 3px solid purple;
     overflow: hidden;
 
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    outline-offset: 0.25rem;
+    /* outline-offset: 0.25rem; */
     border-radius: 3%;
     padding: 20px;
 }
@@ -112,7 +131,7 @@ span {
     border-color: #4caf50;
 }
 .contacts{
-    padding-top: 20px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     gap:2rem;
@@ -132,4 +151,67 @@ span {
 }
 a{
     text-decoration: none;
+}
+.blog-1{
+    border: 3px solid purple;
+    
+        overflow: hidden;
+    
+        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        padding: 20px;
+        border-radius: 3%;
+
+}
+.blog-1:hover{
+    transform: scale(1.1);
+        border-color: #4caf50;
+
+}
+.blog-2{
+    border: 3px solid purple;
+    
+        overflow: hidden;
+    
+        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        padding: 20px;
+        border-radius: 3%;
+
+}
+.blog-2:hover{
+    transform: scale(1.1);
+        border-color: #4caf50;
+
+}
+.blog-3{
+    border: 3px solid purple;
+    
+        overflow: hidden;
+    
+        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        padding: 20px;
+        border-radius: 3%;
+
+}
+.blog-3:hover{
+    transform: scale(1.1);
+        border-color: #4caf50;
+
+}
+.button{
+    border-radius: 5%;
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+    
+}
+.button:hover{
+    
+}
+nav a:hover{
+    color:red;
+}
+.open{
+    display: flex;
+    justify-content: space-evenly;
 }
