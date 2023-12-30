@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 h1 {
@@ -62,12 +63,12 @@ nav a:hover {
     margin-left: 50px;
     /* text-indent: 2em; */
     line-height: 1.5em;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     /* justify-content: center; */
     gap: 20px;
     padding-top: 200px;
-}
+    }
 
 span {
     color: blueviolet;
@@ -79,6 +80,7 @@ span {
     color: purple;
     text-align: center;
     padding-bottom: 20px;
+    font-size: 32px;
 }
 
 .projects {
@@ -203,9 +205,6 @@ a{
     justify-content: center;
     padding-top: 30px;
     
-    
-}
-.button:hover{
     
 }
 nav a:hover{
