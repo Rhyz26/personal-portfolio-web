@@ -1,8 +1,19 @@
+@media (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+}
+
+@media (min-width: 992px) {
+    /* Styles for screens 992px wide or wider */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    /* background-color: green;  */
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -10,40 +21,60 @@ h1 {
 }
 
 a {
-    color: green;
+    /* color: green; */
     font-family: "Fraunces";
+    background-color: transparent;
 }
 
 .nav {
     display: flex;
-    gap: 8rem;
-    justify-content: space-around;
+    z-index: 1000; /*this one makes sure that the content doesnt overflow above the navigation bar */ 
     width:100%;
+    background-color: rgb(95, 205, 11);
     /* align-self: flex-end; */
 
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* padding-bottom: 2px; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* margin-top: 10px; */
-    background-color: white;
-    /* margin-right: 40px; */
-    /* width:1000px; */
     overflow: hidden;
-    top: 0;
     position: fixed;
-    /* align-items: flex-end; */
-    /* flex-direction: row; */
-
     /* float: left; */
-    color: white;
-    text-align: center;
+    /* color: white; */
     /* padding-bottom:20px; */
     text-decoration: none;
-    transition: border-bottom 0.3s ease;
+    /* transition: border-bottom 0.3s ease; */
 }
 
 nav a:hover {
     border-bottom: 1px solid yellow;
+}
+ul{
+    /* list-style: none; */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 1rem;
+    margin: auto;
+    width:50%;
+    font-weight: 500;
+
+    
+}
+
+ul a::after{
+    content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: var(--main-color);
+        bottom: -3px;
+        left: 0;
+        transition: ease .40s;
+
+}
+ul a:hover::after{
+    width: 100%;
 }
 
 .image {
@@ -79,8 +110,9 @@ span {
 #project {
     color: purple;
     text-align: center;
-    padding-bottom: 20px;
-    font-size: 32px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
 }
 
 .projects {
@@ -101,7 +133,7 @@ span {
 
 .image1:hover {
     transform: scale(1.1);
-    border-color: solid #4caf50;
+    border-color: #4caf50;
 }
 
 .image2 {
@@ -149,6 +181,7 @@ span {
     display: flex;
     gap:2rem;
     justify-content: space-evenly;
+    padding-bottom: 8rem;
 
 }
 a{
@@ -200,12 +233,21 @@ a{
 
 }
 .button{
-    border-radius: 5%;
+    /* border-radius: 80%; */
     display:flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 2rem;
+    overflow: hidden;
+    
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    /* border-radius: 3%; */
     
     
+    
+}
+.button:hover{
+    transform: scale(1.1);
+    border-color: #4caf50;
 }
 nav a:hover{
     color:red;
@@ -213,4 +255,55 @@ nav a:hover{
 .open{
     display: flex;
     justify-content: space-evenly;
+}
+.about{
+    display: flex;
+    gap:8rem;
+    margin-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about-2{
+    max-width: 40rem;
+}
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    /* padding: 2rem 10%; */
+    transition: .3s;
+    z-index: 2;
+}
+
+#footer{
+    
+    color: purple;
+    font-size: 1rem;
+    /* display: flex; */
+    /* text-align: center; */
+    padding-top: 4rem;
+     /* border-top: px solid var(--text-color); */
+    /* width: 50%; */
+    margin: auto;
+}
+
+#footer-section{
+    /* display:flex; */
+    text-align: center;
+    /* padding-top:4rem;
+    padding-bottom: 4rem; */
+    padding:3rem;
+    border-top: 2px solid purple;
+    width:50%;
+    margin:auto;
+    
+}
+#horizontal{
+    color:red;
 }
