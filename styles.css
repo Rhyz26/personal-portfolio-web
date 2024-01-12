@@ -2,23 +2,37 @@
     /* Styles for screens up to 768px wide */
 }
 
-@media (min-width: 992px) {
-    /* Styles for screens 992px wide or wider */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* CSS styles for screens between 769px and 1024px */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: green;  */
+    background-color: #0a192f; 
     scroll-behavior: smooth;
     font-family: 'Jost', sans-serif;
     box-sizing: border-box;
+    color: white;
 }
+
+
 
 h1 {
     color: red;
 }
+
+
+.logo h1 {
+    max-width: 100%;
+    width: 130px;
+    height: auto;
+    color:blueviolet;
+    margin-left: 2rem;
+}
+
+
 
 a {
     /* color: green; */
@@ -26,31 +40,47 @@ a {
     background-color: transparent;
 }
 
+
+
 .nav {
     display: flex;
     z-index: 1000; /*this one makes sure that the content doesnt overflow above the navigation bar */ 
     width:100%;
-    background-color: rgb(95, 205, 11);
+    /* background-color:greenyellow; */
     /* align-self: flex-end; */
 
-    /* padding-top: 30px; */
-    /* padding-bottom: 2px; */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     /* margin-bottom: 10px; */
     /* margin-top: 10px; */
     overflow: hidden;
     position: fixed;
-    /* float: left; */
-    /* color: white; */
-    /* padding-bottom:20px; */
     text-decoration: none;
-    /* transition: border-bottom 0.3s ease; */
+    transition: border-bottom 0.3s ease;
 }
 
-nav a:hover {
-    border-bottom: 1px solid yellow;
+.nav li:hover {
+    /* border-bottom: 1px solid rgb(32, 32, 196); */
+    transform: translate(0px, 5px);
 }
-ul{
-    /* list-style: none; */
+
+
+.nav {
+    justify-content: flex-end;
+    list-style: none;
+}
+
+
+/* .nav>li {
+    display: none;
+    transition: .2s;
+    
+} */
+
+
+
+ul {
+    list-style: none;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -62,20 +92,27 @@ ul{
     
 }
 
+
+
 ul a::after{
     content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        background-color: var(--main-color);
-        bottom: -3px;
-        left: 0;
-        transition: ease .40s;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: -3px;
+    left: 0;
+    /* transition: ease .40s; */
 
 }
+
+
 ul a:hover::after{
     width: 100%;
 }
+
+
+
 
 .image {
     border-radius: 10px;
@@ -108,7 +145,7 @@ span {
 }
 
 #project {
-    color: purple;
+    color: blueviolet;
     text-align: center;
     padding-bottom: 3rem;
     padding-top: 3rem;
@@ -121,8 +158,12 @@ span {
     justify-content: space-evenly;
 }
 
+p{
+    color: #8892b0;
+}
+
 .image1 {
-    border: 3px solid purple;
+    border: 3px solid blueviolet;
 
     overflow: hidden;
 
@@ -137,7 +178,7 @@ span {
 }
 
 .image2 {
-    border: 3px solid purple;
+    border: 3px solid blueviolet;
     overflow: hidden;
 
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -151,7 +192,7 @@ span {
 }
 
 .image3 {
-    border: 3px solid purple;
+    border: 3px solid blueviolet;
     overflow: hidden;
 
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -188,13 +229,13 @@ a{
     text-decoration: none;
 }
 .blog-1{
-    border: 3px solid purple;
+    border: 3px solid blueviolet;
     
-        overflow: hidden;
+    overflow: hidden;
     
-        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-        padding: 20px;
-        border-radius: 3%;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 3%;
 
 }
 .blog-1:hover{
@@ -203,13 +244,13 @@ a{
 
 }
 .blog-2{
-    border: 3px solid purple;
+    border: 3px solid blueviolet;
     
-        overflow: hidden;
+    overflow: hidden;
     
-        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-        padding: 20px;
-        border-radius: 3%;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 3%;
 
 }
 .blog-2:hover{
@@ -218,7 +259,7 @@ a{
 
 }
 .blog-3{
-    border: 3px solid purple;
+    border: 3px solid blueviolet;
     
         overflow: hidden;
     
@@ -274,16 +315,15 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: var(--bg-color);
-    /* padding: 2rem 10%; */
+    /* justify-content: space-between; */
+    padding: 0rem;
     transition: .3s;
     z-index: 2;
 }
 
 #footer{
     
-    color: purple;
+    color: blueviolet;
     font-size: 1rem;
     /* display: flex; */
     /* text-align: center; */
@@ -299,7 +339,7 @@ header {
     /* padding-top:4rem;
     padding-bottom: 4rem; */
     padding:3rem;
-    border-top: 2px solid purple;
+    border-top: 2px solid blueviolet;
     width:50%;
     margin:auto;
     
