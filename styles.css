@@ -1,84 +1,69 @@
-@media (max-width: 768px) {
-    /* Styles for screens up to 768px wide */
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* CSS styles for screens between 769px and 1024px */
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #0a192f; 
-    scroll-behavior: smooth;
-    font-family: 'Jost', sans-serif;
-    box-sizing: border-box;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0a192f;
+  scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+  box-sizing: border-box;
+  color: white;
 }
-
-
 
 .logo h1 {
-    max-width: 100%;
-    width: 130px;
-    height: auto;
-    color:blueviolet;
-    margin-left: 2rem;
+  max-width: 100%;
+  width: 130px;
+  height: auto;
+  color: blueviolet;
+  margin-left: 2rem;
 }
-
 
 header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    /* align-self: flex-end; */
-    /* align-items: right; */
-    justify-content: space-evenly;
-    padding: 0rem;
-    /* transition: .3s; */
-    z-index: 2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  /* align-self: flex-end; */
+  /* align-items: right; */
+  justify-content: space-evenly;
+  padding: 0rem;
+  /* transition: .3s; */
+  z-index: 2;
 }
-
 
 a {
-    /* color: green; */
-    font-family: "Fraunces";
-    background-color: transparent;
-    text-decoration: none;
+  /* color: green; */
+  font-family: "Fraunces";
+  background-color: transparent;
+  text-decoration: none;
 }
 
-
 nav a:hover {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 .nav {
-    display: flex;
-    z-index: 1000; /*this one makes sure that the content doesnt overflow above the navigation bar */ 
-    width:100%;
-    
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    /* margin-bottom: 10px; */
-    /* margin-top: 10px; */
-    overflow: hidden;
-    position: sticky;
-    text-decoration: none;
-    transition: border-bottom 0.3s ease;
+  display: flex;
+  z-index: 1000; /*this one makes sure that the content doesnt overflow above the navigation bar */
+  width: 100%;
+
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  /* margin-bottom: 10px; */
+  /* margin-top: 10px; */
+  overflow: hidden;
+  position: sticky;
+  text-decoration: none;
+  transition: border-bottom 0.3s ease;
 }
 
 .nav li:hover {
-    /* border-bottom: 1px solid rgb(32, 32, 196); */
-    transform: translate(0px, 5px);
+  /* border-bottom: 1px solid rgb(32, 32, 196); */
+  transform: translate(0px, 5px);
 }
-
 
 .nav {
-    /* justify-content: flex-end; */
-    list-style: none;
+  /* justify-content: flex-end; */
+  list-style: none;
 }
-
 
 /* .nav>li {
     display: none;
@@ -86,261 +71,266 @@ nav a:hover {
     
 } */
 
-
-
 ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-    font-size: 1rem;
-    margin: auto;
-    width:50%;
-    font-weight: 500;
-
-    
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  font-size: 1rem;
+  margin: auto;
+  width: 50%;
+  font-weight: 500;
 }
 
-
-ul a::after{
-    /* content: ''; */
-    /* position: absolute; */
-    /* width: 0; */
-    /* height: 2px; */
-    /* background-color: var(--main-color); */
-    /* bottom: -3px; */
-    /* left: 0; */
-    /* transition: ease .40s; */
-
+ul a::after {
+  /* content: ''; */
+  /* position: absolute; */
+  /* width: 0; */
+  /* height: 2px; */
+  /* background-color: var(--main-color); */
+  /* bottom: -3px; */
+  /* left: 0; */
+  /* transition: ease .40s; */
 }
 
-
-ul a:hover::after{
-    /* width: 100%; */
+ul a:hover::after {
+  /* width: 100%; */
 }
-
 
 .image {
-    border-radius: 10px;
-    margin-left: 2px;
-    padding-bottom: 10px;
-    
+  border-radius: 10px;
+  margin-left: 2px;
+  padding-bottom: 10px;
 }
-
 
 .list {
-    /* display: flex; */
+  /* display: flex; */
 }
-
 
 .container {
-    max-width: 90%;
-    word-spacing: 0.4em;
-    margin-left: 50px;
-    /* text-indent: 2em; */
-    line-height: 1.5em;
-    font-size: 18px;
-    display: flex;
-    /* justify-content: center; */
-    gap: 2rem;
-    padding-top: 8rem;
-    }
-
+  max-width: 90%;
+  word-spacing: 0.4em;
+  margin-left: 50px;
+  /* text-indent: 2em; */
+  line-height: 1.5em;
+  font-size: 18px;
+  display: flex;
+  /* justify-content: center; */
+  gap: 2rem;
+  padding-top: 8rem;
+}
 
 span {
-    color: blueviolet;
-    font-weight: bold;
-    font-size: 3rem;
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 3rem;
 }
-
 
 #project {
-    color: blueviolet;
-    text-align: center;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    font-size: 2rem;
+  color: blueviolet;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  font-size: 2rem;
 }
-
 
 .projects {
-    display: flex;
-    gap: em;
-    justify-content: space-evenly;
+  display: flex;
+  gap: em;
+  justify-content: space-evenly;
 }
 
-
-p{
-    color: #8892b0;
+p {
+  color: #8892b0;
 }
-
 
 .image1 {
-    border: 3px solid blueviolet;
+  border: 3px solid blueviolet;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    padding: 20px;
-    border-radius: 3%;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 3%;
 }
-
 
 .image1:hover {
-    transform: scale(1.1);
-    border-color: #4caf50;
+  transform: scale(1.1);
+  border-color: #4caf50;
 }
-
 
 .image2 {
-    border: 3px solid blueviolet;
-    overflow: hidden;
+  border: 3px solid blueviolet;
+  overflow: hidden;
 
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    padding: 20px;
-    border-radius: 3%;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 3%;
 }
-
 
 .image2:hover {
-    transform: scale(1.1);
-    border-color: #4caf50;
+  transform: scale(1.1);
+  border-color: #4caf50;
 }
-
 
 .image3 {
-    border: 3px solid blueviolet;
-    overflow: hidden;
+  border: 3px solid blueviolet;
+  overflow: hidden;
 
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    /* outline-offset: 0.25rem; */
-    border-radius: 3%;
-    padding: 20px;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  /* outline-offset: 0.25rem; */
+  border-radius: 3%;
+  padding: 20px;
 }
-
 
 .image3:hover {
-    transform: scale(1.1);
-    border-color: #4caf50;
+  transform: scale(1.1);
+  border-color: #4caf50;
 }
 
-
-.contacts{
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap:2rem;
-
+.contacts {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-
-.content{
-    /* text-align: center; */
-    max-width: 25rem;
-    /* margin-left: 450px; */
-    margin-top: 30px;
-    margin-left: 28rem;
-
-    
+.content {
+  /* text-align: center; */
+  max-width: 25rem;
+  /* margin-left: 450px; */
+  margin-top: 30px;
+  margin-left: 28rem;
 }
 
-.blog{
-    display: flex;
-    gap:2rem;
-    justify-content: space-evenly;
-    padding-bottom: 8rem;
-
+.blog {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  padding-bottom: 8rem;
 }
 
-.blog-1{
-    border: 3px solid blueviolet;
-    
-    overflow: hidden;
-    
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    padding: 20px;
-    border-radius: 3%;
+.blog-1 {
+  border: 3px solid blueviolet;
 
+  overflow: hidden;
+
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 3%;
 }
-.blog-1:hover{
-    transform: scale(1.1);
-        border-color: #4caf50;
-
+.blog-1:hover {
+  transform: scale(1.1);
+  border-color: #4caf50;
 }
-.blog-2{
-    border: 3px solid blueviolet;
-    
-    overflow: hidden;
-    
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    padding: 20px;
-    border-radius: 3%;
+.blog-2 {
+  border: 3px solid blueviolet;
 
+  overflow: hidden;
+
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 3%;
 }
-.blog-2:hover{
-    transform: scale(1.1);
-        border-color: #4caf50;
-
+.blog-2:hover {
+  transform: scale(1.1);
+  border-color: #4caf50;
 }
-.blog-3{
-    border: 3px solid blueviolet;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    padding: 20px;
-    border-radius: 3%;
-
+.blog-3 {
+  border: 3px solid blueviolet;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 3%;
 }
 
-
-.blog-3:hover{
-    transform: scale(1.1);
-    border-color: #4caf50;
-
+.blog-3:hover {
+  transform: scale(1.1);
+  border-color: #4caf50;
 }
 
-.button{
-    /* border-radius: 80%; */
-    display:flex;
-    justify-content: center;
-    padding-top: 2rem;
-    overflow: hidden;
-    
+.button {
+  /* border-radius: 80%; */
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  overflow: hidden;
 }
 
-.about{
-    display: flex;
-    gap:8rem;
-    margin-left: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.about {
+  display: flex;
+  gap: 8rem;
+  margin-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-
-.about-2{
-    max-width: 40rem;
+.about-2 {
+  max-width: 40rem;
 }
 
-
-#footer{
-    
-    color: blueviolet;
-    font-size: 1rem;
-    /* display: flex; */
-    /* text-align: center; */
-    padding-top: 4rem;
-     /* border-top: px solid var(--text-color); */
-    /* width: 50%; */
-    margin: auto;
+#footer {
+  color: blueviolet;
+  font-size: 1rem;
+  /* display: flex; */
+  /* text-align: center; */
+  padding-top: 4rem;
+  /* border-top: px solid var(--text-color); */
+  /* width: 50%; */
+  margin: auto;
 }
 
-#footer-section{
-    /* display:flex; */
-    text-align: center;
-    /* padding-top:4rem;
+#footer-section {
+  /* display:flex; */
+  text-align: center;
+  /* padding-top:4rem;
     padding-bottom: 4rem; */
-    padding:3rem;
-    border-top: 2px solid blueviolet;
-    width:50%;
-    margin:auto;
-    
+  padding: 3rem;
+  border-top: 2px solid blueviolet;
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 800px) and (min-width: 768px) {
+  .container {
+    flex-direction: column;
+    font-size: 2rem;
+    margin-bottom: 17rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .home-img {
+    flex-basis: none;
+  }
+
+  .home-img img {
+    width: auto;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    font-size: 2rem;
+    margin-bottom: 17rem;
+    text-align: center;
+  }
+
+  #projects {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  #contact {
+    transform: translate(0%, 0%);
+    margin-bottom: 20rem;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  #blog {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
 }
