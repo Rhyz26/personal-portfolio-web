@@ -19,11 +19,6 @@
 
 
 
-h1 {
-    color: red;
-}
-
-
 .logo h1 {
     max-width: 100%;
     width: 130px;
@@ -33,28 +28,42 @@ h1 {
 }
 
 
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    /* align-self: flex-end; */
+    /* align-items: right; */
+    justify-content: space-evenly;
+    padding: 0rem;
+    /* transition: .3s; */
+    z-index: 2;
+}
+
 
 a {
     /* color: green; */
     font-family: "Fraunces";
     background-color: transparent;
+    text-decoration: none;
 }
 
 
+nav a:hover {
+    color: blueviolet;
+}
 
 .nav {
     display: flex;
     z-index: 1000; /*this one makes sure that the content doesnt overflow above the navigation bar */ 
     width:100%;
-    /* background-color:greenyellow; */
-    /* align-self: flex-end; */
-
+    
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     /* margin-bottom: 10px; */
     /* margin-top: 10px; */
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     text-decoration: none;
     transition: border-bottom 0.3s ease;
 }
@@ -66,7 +75,7 @@ a {
 
 
 .nav {
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     list-style: none;
 }
 
@@ -83,7 +92,7 @@ ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 10rem;
     font-size: 1rem;
     margin: auto;
     width:50%;
@@ -93,25 +102,22 @@ ul {
 }
 
 
-
 ul a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: var(--main-color);
-    bottom: -3px;
-    left: 0;
+    /* content: ''; */
+    /* position: absolute; */
+    /* width: 0; */
+    /* height: 2px; */
+    /* background-color: var(--main-color); */
+    /* bottom: -3px; */
+    /* left: 0; */
     /* transition: ease .40s; */
 
 }
 
 
 ul a:hover::after{
-    width: 100%;
+    /* width: 100%; */
 }
-
-
 
 
 .image {
@@ -121,9 +127,11 @@ ul a:hover::after{
     
 }
 
+
 .list {
-    display: flex;
+    /* display: flex; */
 }
+
 
 .container {
     max-width: 90%;
@@ -134,15 +142,17 @@ ul a:hover::after{
     font-size: 18px;
     display: flex;
     /* justify-content: center; */
-    gap: 20px;
-    padding-top: 200px;
+    gap: 2rem;
+    padding-top: 8rem;
     }
+
 
 span {
     color: blueviolet;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 3rem;
 }
+
 
 #project {
     color: blueviolet;
@@ -152,15 +162,18 @@ span {
     font-size: 2rem;
 }
 
+
 .projects {
     display: flex;
     gap: em;
     justify-content: space-evenly;
 }
 
+
 p{
     color: #8892b0;
 }
+
 
 .image1 {
     border: 3px solid blueviolet;
@@ -172,10 +185,12 @@ p{
     border-radius: 3%;
 }
 
+
 .image1:hover {
     transform: scale(1.1);
     border-color: #4caf50;
 }
+
 
 .image2 {
     border: 3px solid blueviolet;
@@ -186,10 +201,12 @@ p{
     border-radius: 3%;
 }
 
+
 .image2:hover {
     transform: scale(1.1);
     border-color: #4caf50;
 }
+
 
 .image3 {
     border: 3px solid blueviolet;
@@ -201,10 +218,13 @@ p{
     padding: 20px;
 }
 
+
 .image3:hover {
     transform: scale(1.1);
     border-color: #4caf50;
 }
+
+
 .contacts{
     padding-top: 30px;
     display: flex;
@@ -212,12 +232,18 @@ p{
     gap:2rem;
 
 }
+
+
 .content{
-    text-align: center;
-    max-width: 400px;
-    margin-left: 450px;
+    /* text-align: center; */
+    max-width: 25rem;
+    /* margin-left: 450px; */
     margin-top: 30px;
+    margin-left: 28rem;
+
+    
 }
+
 .blog{
     display: flex;
     gap:2rem;
@@ -225,9 +251,7 @@ p{
     padding-bottom: 8rem;
 
 }
-a{
-    text-decoration: none;
-}
+
 .blog-1{
     border: 3px solid blueviolet;
     
@@ -260,19 +284,20 @@ a{
 }
 .blog-3{
     border: 3px solid blueviolet;
-    
-        overflow: hidden;
-    
-        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-        padding: 20px;
-        border-radius: 3%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 3%;
 
 }
+
+
 .blog-3:hover{
     transform: scale(1.1);
-        border-color: #4caf50;
+    border-color: #4caf50;
 
 }
+
 .button{
     /* border-radius: 80%; */
     display:flex;
@@ -280,23 +305,8 @@ a{
     padding-top: 2rem;
     overflow: hidden;
     
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    /* border-radius: 3%; */
-    
-    
-    
 }
-.button:hover{
-    transform: scale(1.1);
-    border-color: #4caf50;
-}
-nav a:hover{
-    color:red;
-}
-.open{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .about{
     display: flex;
     gap:8rem;
@@ -304,22 +314,12 @@ nav a:hover{
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+
 .about-2{
     max-width: 40rem;
 }
 
-
-
-header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    padding: 0rem;
-    transition: .3s;
-    z-index: 2;
-}
 
 #footer{
     
@@ -343,7 +343,4 @@ header {
     width:50%;
     margin:auto;
     
-}
-#horizontal{
-    color:red;
 }
