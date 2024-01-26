@@ -145,8 +145,9 @@ span {
 
 .projects {
   display: flex;
-  gap: em;
+  gap: 2rem;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 p {
@@ -219,6 +220,7 @@ p {
   gap: 2rem;
   justify-content: space-evenly;
   padding-bottom: 8rem;
+  flex-wrap: wrap;
 }
 
 .blog-1 {
