@@ -27,6 +27,7 @@ header {
   padding: 0rem;
   /* transition: .3s; */
   z-index: 2;
+  flex-wrap: wrap;
 }
 
 a {
@@ -53,6 +54,7 @@ nav a:hover {
   position: sticky;
   text-decoration: none;
   transition: border-bottom 0.3s ease;
+  flex-wrap: wrap;
 }
 
 .nav li:hover {
@@ -82,7 +84,7 @@ ul {
   font-weight: 500;
 }
 
-ul a::after {
+/* ul a::after { */
   /* content: ''; */
   /* position: absolute; */
   /* width: 0; */
@@ -91,11 +93,11 @@ ul a::after {
   /* bottom: -3px; */
   /* left: 0; */
   /* transition: ease .40s; */
-}
+/* } */
 
-ul a:hover::after {
+/* ul a:hover::after { */
   /* width: 100%; */
-}
+/* } */
 
 .image {
   border-radius: 10px;
@@ -110,14 +112,15 @@ ul a:hover::after {
 .container {
   max-width: 90%;
   word-spacing: 0.4em;
-  margin-left: 50px;
+  margin-left: 3rem;
   /* text-indent: 2em; */
   line-height: 1.5em;
-  font-size: 18px;
+  font-size: 1rem;
   display: flex;
   /* justify-content: center; */
   gap: 2rem;
   padding-top: 8rem;
+  /* flex-wrap: wrap; */
 }
 
 span {
