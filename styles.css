@@ -17,10 +17,10 @@ body {
 
 .logo h1 {
   max-width: 100%;
-  width: 130px;
+  width: 8.125rem;
   height: auto;
   color: blueviolet;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 header {
@@ -30,7 +30,7 @@ header {
   /* align-self: flex-end; */
   /* align-items: right; */
   justify-content: space-evenly;
-  padding: 0rem;
+  /* padding: 0rem; */
   /* transition: .3s; */
   z-index: 2;
   flex-wrap: wrap;
@@ -49,18 +49,21 @@ nav a:hover {
 
 .nav {
   display: flex;
-  z-index: 1000; /*this one makes sure that the content doesnt overflow above the navigation bar */
-  width: 100%;
+  /* z-index: 1000; this one makes sure that the content doesnt overflow above the navigation bar */
+  /* width: 100%; */
 
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   /* margin-bottom: 10px; */
   /* margin-top: 10px; */
-  overflow: hidden;
+  /* overflow: hidden; */
   position: sticky;
   text-decoration: none;
   transition: border-bottom 0.3s ease;
   flex-wrap: wrap;
+  list-style: none;
+  gap: 3rem;
+  /* align-items: flex-end; */
 }
 
 .nav li:hover {
@@ -68,10 +71,6 @@ nav a:hover {
   transform: translate(0px, 5px);
 }
 
-.nav {
-  /* justify-content: flex-end; */
-  list-style: none;
-}
 
 /* .nav>li {
     display: none;
@@ -82,12 +81,13 @@ nav a:hover {
 ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 10rem;
+  /* justify-content: center; */
   font-size: 1rem;
   margin: auto;
-  width: 50%;
-  font-weight: 500;
+  /* width: 100%; */
+  /* font-weight: 50; */
+  /* flex-wrap: wrap; */
+  
 }
 
 /* ul a::after { */
@@ -317,6 +317,7 @@ p {
     /* text-align: center; */
   }
 
+  
   .home-img {
     flex-basis: none;
   }
