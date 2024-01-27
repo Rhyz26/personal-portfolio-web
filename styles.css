@@ -29,16 +29,17 @@ header {
   display: flex;
   /* align-self: flex-end; */
   /* align-items: right; */
-  justify-content: space-evenly;
+  justify-content: flex-end;
   /* padding: 0rem; */
   /* transition: .3s; */
   z-index: 2;
+  margin-right: 3rem;
   flex-wrap: wrap;
 }
 
 a {
-  /* color: green; */
-  font-family: "Fraunces";
+  
+  /* font-family: "Fraunces"; */
   background-color: transparent;
   text-decoration: none;
 }
