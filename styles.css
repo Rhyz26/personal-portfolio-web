@@ -31,14 +31,13 @@ a {
   position: sticky;
   z-index: 2;
   top: 0;
-  
 }
 
 .logo {
   font-size: 1.5em;
   font-weight: bold;
   /* margin-left: 1rem; */
-  color:blueviolet;
+  color: blueviolet;
 }
 
 .menu-icon {
@@ -80,11 +79,43 @@ a {
   font-weight: bold;
 }
 
+.btn{
+  border-radius: 15px;
+  padding:5px;
+  margin-top: 20px;
+  border-color: blueviolet;
+ 
+
+}
+
+.btn:hover{
+  transform: translate(0px, 5px);
+  
+}
+
+.git{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.btn-1{
+  border-radius: 15px;
+  padding:5px;
+  border-color: blueviolet;
+}
+
+
+.btn-1:hover {
+  transform: translate(0px, 5px);
+
+}
+
+
+
 /* Media query for small screens */
 @media screen and (max-width: 600px) {
   .menu-icon {
     display: block;
-    
   }
 
   .nav-list {
@@ -97,21 +128,16 @@ a {
     padding: 1rem;
     align-items: center;
     gap: 1rem;
-    
-    
-    
   }
 
   .nav-list.show {
     display: flex;
   }
 
-  .container{
+  .container {
     flex-wrap: wrap;
   }
-
-  
-  }
+}
 
 .image {
   border-radius: 10px;
@@ -211,6 +237,16 @@ p {
   gap: 2rem;
 }
 
+.hero {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  /* max-width: 50%; */
+  width: 1128px;
+  /* margin: 0px; */
+}
 .content {
   text-align: center;
   /* max-width: 100%; */
@@ -219,7 +255,6 @@ p {
   margin-left: 4rem;
   margin-right: 4rem;
   /* margin: auto; */
-  
 }
 
 .blog {
