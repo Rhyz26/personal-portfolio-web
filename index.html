@@ -1,231 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Hi, My name is Raymond Njagala - Web Developer">
-    <title>Raymond Njagala</title>
+    <meta name="theme-color" content="#0a192f" />
+    <meta
+      name="description"
+      content="Raymond Njagala - Professional Web Developer Portfolio showcasing skills, projects, and blog"
+    />
+    <meta
+      name="keywords"
+      content="web developer, portfolio, Raymond Njagala, software developer, frontend developer"
+    />
+    <title>Raymond Njagala | Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@700&family=PT+Serif&display=swap"
-        rel="stylesheet" />
-
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/ray3.png" />
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">RNK</div>
+      <div
+        class="menu-icon"
+        onclick="toggleMenu()"
+        aria-label="Toggle navigation menu"
+      >
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
 
-<body >
-    
-    <div class="navbar">
-        <div class="logo">RNK</div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contacts</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-        
-        
-    </div>
-    
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li>
+          <a
+            href="./assets/Raymond.pdf"
+            download="Raymond.pdf"
+            class="resume-btn"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
+
     <main>
-        <section id="home">
-            <div class="container">
-                <p>
-                    Hello there!
-                    <br>
-                    <br>
-                    <span>I'm Raymond Njagala</span></p>
-                    <p style="word-spacing: 0.4em; line-height: 1.5em;">a passionate
-                    Software developer dedicated to creating meaningful and innovative
-                    solutions. This is my digital playground where ideas come to life
-                    and creativity knows no bounds. Whether you're here to explore my
-                    past projects, discover my skills, or just to say hello, I'm
-                    thrilled to have you. Take a stroll through my work, get to know the
-                    person behind the screen, and feel free to reach out if you have
-                    exciting opportunities or collaborations in mind. Let's build
-                    something amazing together! 💡✨
-                </p>
-                <div class="home-img">
-                    <image src="/assets/ray1.JPEG" width="300px" alt="Raymond presenting " style="border-radius: 1rem;">
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <p class="greeting">Hello there!</p>
+            <h1 class="hero-title">
+              I'm <span class="highlight">Raymond Njagala</span>
+            </h1>
+            <p class="hero-description">
+              A passionate Software Developer dedicated to creating meaningful
+              and innovative solutions. This is my digital playground where
+              ideas come to life and creativity knows no bounds.
+            </p>
+            <div class="cta-buttons">
+              <a href="#contact" class="btn primary-btn">Let's Connect</a>
+              <a
+                href="./assets/Raymond_Njagala_CV.pdf"
+                download="Raymond_Njagala_CV.pdf"
+                class="btn secondary-btn"
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="./assets/ray1.JPEG"
+              alt="Raymond Njagala"
+              class="profile-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="about-container">
+            <div class="about-content">
+              <h2 class="section-title">I'm a Developer!</h2>
+              <h3 class="section-subtitle">
+                I Can Design and Develop anything you want
+              </h3>
+              <p class="about-description">
+                I'm a Software Developer, I'm very passionate
+                and dedicated to my work. I have acquired the skills and
+                knowledge necessary to make your project a success. I enjoy
+                every step of the design and development process, from
+                initiation, discussion and collaboration.
+              </p>
+
+              <!-- Skills Section with Icons -->
+              <div class="skills-section">
+                <h4 class="skills-title">My Technical Skills</h4>
+                <div class="skills-list">
+                  <div class="skill-item" title="HTML5">
+                    <i class="fab fa-html5"></i>
+                  </div>
+                  <div class="skill-item" title="CSS3">
+                    <i class="fab fa-css3-alt"></i>
+                  </div>
+                  <div class="skill-item" title="JavaScript">
+                    <i class="fab fa-js"></i>
+                  </div>
+                  <div class="skill-item" title="React">
+                    <i class="fab fa-react"></i>
+                  </div>
+                  <div class="skill-item" title="Node.js">
+                    <i class="fab fa-node-js"></i>
+                  </div>
+                  <div class="skill-item" title="Git">
+                    <i class="fab fa-git-alt"></i>
+                  </div>
+                  <div class="skill-item" title="GitHub">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div class="skill-item" title="Python">
+                    <i class="fab fa-python"></i>
+                  </div>
+                  <div class="skill-item" title="Database">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <div class="skill-item" title="Responsive Design">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <div class="skill-item" title="Sass">
+                    <i class="fab fa-sass"></i>
+                  </div>
+                  <div class="skill-item" title="npm">
+                    <i class="fab fa-npm"></i>
+                  </div>
                 </div>
               </div>
-        </section>
-        
-        
-        <section id="about">
-            <div class="about">
-
-                  <div class="about-1">
-
-                    <h1 style="color:blueviolet; font-size: 3rem; padding-bottom: 2rem;">I'm a Developer!</h1>
-                    <h1 style="color:blueviolet; font-size: 2rem; padding-bottom: 2rem;">I Can Design and Develop anything you want</h1>
-                    
-                    <div class="about-2">
-                        
-                        <p style="line-height: 1.5rem; word-spacing: 0.5rem; font-size:1rem;">Hello there! I'm a Software Developer, and I'm very passionate and dedicated to my work.  I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design and development process, from initiation, discussion and collaboration.
-                        </p>
-                    </div>
-                </div>
-
-
-<img src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_1280.jpg" width="350px"
-    style="border-radius: 2rem;">
-
-
-                
             </div>
-
-
-        </section>
-        
-        <section id="projects">
-            <h1 id="project">PROJECTS</h1>
-            <h2 style="text-align: center; padding-bottom: 2rem; color:blueviolet; font-size:25px;">Take a look at Some of my Work!</h2>
-            <div class="projects">
-
-                <div class="image1">
-
-                    <a href="https://jamii-vizuri.vercel.app/" target="_blank">
-                        <img src="./assets/jami.png" width="300" height="300"></a>
-                </div>
-
-                <div class="image2">
-
-
-                    <a href="https://react-agrihub.vercel.app" target="_blank">
-                        <img src="./assets/agrihub.png" width="300" height="300"></a>
-                </div>
-                <div class="image2">
-
-                    <a href="https://react-calculator-nine-orpin.vercel.app/" target="_blank">
-                        <img src="./assets/calc.jpg" width="300" height="300"></a>
-                </div>
-                
+            <div class="about-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_1280.jpg"
+                alt="Web development workspace"
+                class="work-image"
+              />
             </div>
-                <div class="git">
-                    <a href="https://github.com/Rhyz26?tab=repositories" target="_blank"><button class="btn-1">
-                        <h1>More Projects....</h1>
-                    </button></a>
-                </div>
-                
-        </section>
-        <section id="contact">
-            <h1 style="text-align: center; color:blueviolet; margin-top: 3rem; padding-top:3rem; padding-bottom: 3rem; font-size: 25px;">Get in touch </h1>
-            <div class="content">
+          </div>
+        </div>
+      </section>
 
-                <div class="hero">
-                    <p style="line-height: 1.5rem;  font-size:1rem; ">
-                        Feel free to reach out, i would very much love to help build you a beautiful website, We can also
-                        collaborate on some projects that are going on. my inbox is always open, whether you have a
-                        question, an
-                        opportunity or just saying hello. I'll be very glad to reach out.
-                    </p>
+      <!-- Projects Section -->
+      <section id="projects" class="section dark-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">PROJECTS</h2>
+            <h3 class="section-subtitle">Take a look at Some of my Work!</h3>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <a
+                href="https://jamii-vizuri.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/jami.png"
+                  alt="Jamii Vizuri Project"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <h4>Jamii Vizuri</h4>
+                  <p>Community Service Platform</p>
                 </div>
-            
+              </a>
             </div>
-            
-            <div class="contacts">
-
-                <a href="https://www.linkedin.com/in/raymond-njagala-9a6309a8/" target="_blank"> 
-                <i class="fa-brands fa-linkedin fa-beat-fade" style="color: white;"></i></a>
-
-                <!-- fa-bounce  an alternative for bouncing of the icons-->
-
-
-                <a href="https://twitter.com/Initial_Rhy" target="_blank"> 
-                <i class="fa-brands fa-x-twitter fa-beat-fade"
-                style="color: white;"></i></a>
-
-                <a href="https://wa.me/256703897243" target="_blank"> 
-                <i class="fa-brands fa-square-whatsapp fa-beat-fade"
-                style="color: white;"></i></a>
-
-
-
-
-                <a href="https://github.com/Rhyz26" target="_blank"> <i class="fa-brands fa-github fa-beat-fade"
-                style="color:white"></i></a>
-
-                <a href="https://medium.com/@njagala.raymond" target="_blank"> <i class="fa-brands fa-medium fa-beat-fade"
-                    style="color:white"></i></a>
-
-                <a href="tel:+256703897243" target="_blank" i class="fa-solid fa-phone fa-beat-fade"
-                    style="color:white;"></i></a>
+            <div class="project-card">
+              <a
+                href="https://react-agrihub.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/agrihub.png"
+                  alt="AgriHub Project"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <h4>AgriHub</h4>
+                  <p>Agricultural Resources Platform</p>
+                </div>
+              </a>
             </div>
-
-            <div class="button">
-                <button style=" padding: 0.5rem 0.5rem; color:blueviolet; border-radius: 2rem; background-color: #4CAF50; color: #fff; border: 1px solid #4CAF50; transition: background-color 0.3s ease;"
-            onmouseover="this.style.backgroundColor='#45a049'; this.style.transform='translateY(-5px)'"
-            onmouseout="this.style.backgroundColor='blueviolet'; this.style.transform='translateY(0)'">
-                    <a href="mailto:njagala.raymond@gmail.com.com">Say Hello</a></button>
-
+            <div class="project-card">
+              <a
+                href="https://react-calculator-nine-orpin.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/calc.jpg"
+                  alt="React Calculator"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <h4>React Calculator</h4>
+                  <p>Interactive Calculator App</p>
+                </div>
+              </a>
             </div>
+          </div>
+          <div class="more-projects">
+            <a
+              href="https://github.com/Rhyz26?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn outline-btn"
+            >
+              View More Projects
+            </a>
+          </div>
+        </div>
+      </section>
 
-        </section>
-        <section id="blog">
-            <h1 style="text-align: center; padding-top:6rem; padding-bottom:6rem; color:blueviolet; font-size: 25px;">My Blogs</h1>
-            <div class="blog">
-
-                <div class="blog-1">
-
-
-
-             <a href="https://medium.com/@njagala.raymond/dom-manipulation-6b113b8c459a"
-                        target="_blank">
-                        <img src="./assets/dom.png" width="300px" height="300px"
-                        alt="DOM Manipulation"></a>
-
-                </div>
-
-
-                <div class="blog-2">
-
-
-                    <a href="https://medium.com/@njagala.raymond/about-node-js-updating-from-an-old-version-to-the-latest-version-3830e9dadc35"
-                        target="_blank">
-                        <img src="./assets/node.png" width="300px" height="300px"
-                            alt="ABOUT NODE JS, Updating from an old version to the latest version!">
-                    </a>
-                </div>
-
-                <div class="blog-3">
-
-
-                    <a href="https://medium.com/@njagala.raymond/local-storage-ee962cf0fdae" target="_blank">
-                        <img src="./assets/local.png" width="300px" height="300px" alt="Local Storage">
-                    </a>
-                </div>
-
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get in touch</h2>
+          </div>
+          <div class="contact-content">
+            <p class="contact-description">
+              Feel free to reach out, I would very much love to help build you a
+              beautiful website. We can also collaborate on some projects that
+              are going on. My inbox is always open, whether you have a
+              question, an opportunity or just saying hello.
+            </p>
+            <div class="contact-methods">
+              <a href="mailto:njagala.raymond@gmail.com" class="btn primary-btn"
+                >Send me an Email</a
+              >
             </div>
-                <div class="medium">
-                    <a href="https://medium.com/@njagala.raymond" target="_blank"><button class="btn"><h1>More on Medium....</h1></button></a>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/raymond-njagala-9a6309a8/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/Initial_Rhy"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://wa.me/256703897243"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://github.com/Rhyz26"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://medium.com/@njagala.raymond"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Medium"
+              >
+                <i class="fab fa-medium"></i>
+              </a>
+              <a href="tel:+256703897243" aria-label="Phone">
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="section dark-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">My Blogs</h2>
+          </div>
+          <div class="blog-grid">
+            <div class="blog-card">
+              <a
+                href="https://medium.com/@njagala.raymond/dom-manipulation-6b113b8c459a"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/dom.png"
+                  alt="DOM Manipulation Blog Post"
+                  class="blog-image"
+                />
+                <div class="blog-content">
+                  <h4>DOM Manipulation</h4>
+                  <p>Understanding the Document Object Model</p>
                 </div>
+              </a>
+            </div>
+            <div class="blog-card">
+              <a
+                href="https://medium.com/@njagala.raymond/about-node-js-updating-from-an-old-version-to-the-latest-version-3830e9dadc35"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/node.png"
+                  alt="Node.js Blog Post"
+                  class="blog-image"
+                />
+                <div class="blog-content">
+                  <h4>About Node.js</h4>
+                  <p>Updating to the latest version</p>
+                </div>
+              </a>
+            </div>
+            <div class="blog-card">
+              <a
+                href="https://medium.com/@njagala.raymond/local-storage-ee962cf0fdae"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/local.png"
+                  alt="Local Storage Blog Post"
+                  class="blog-image"
+                />
+                <div class="blog-content">
+                  <h4>Local Storage</h4>
+                  <p>Client-side data storage techniques</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="more-blogs">
+            <a
+              href="https://medium.com/@njagala.raymond"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn outline-btn"
+            >
+              Read More on Medium
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        </section>
-        
-        <footer id="footer-section">
-            <h3 style="color:blueviolet">© 2025 Developed and Designed by Raymond Njagala. </h3>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="copyright">
+            © <span id="year"></span>2025 Developed and Designed by Raymond Njagala.
+          </p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-            
-        </footer>
-           </main>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
-
