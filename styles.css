@@ -17,8 +17,34 @@
   box-sizing: border-box;
 }
 
+/* Gotham Narrow Font Face Definitions */
+@font-face {
+  font-family: "Gotham Narrow";
+  src: url("./fonts/GothamNarrow-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Narrow";
+  src: url("./fonts/GothamNarrow-Medium.otf") format("opentype");
+  font-weight: 500;
+  /* Medium weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Narrow";
+  src: url("./fonts/GothamNarrow-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: "Jost", sans-serif;
+  font-family: "Gotham Narrow", Arial, sans-serif;
   background-color: var(--primary-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -376,6 +402,7 @@ p {
   border-radius: var(--border-radius);
   overflow: hidden;
   transition: var(--transition);
+  height: 400px;
 }
 
 .project-image {
@@ -465,6 +492,7 @@ p {
   transition: var(--transition);
   background-color: var(--primary-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* height: 400px; */
 }
 
 .blog-image {
@@ -646,19 +674,19 @@ p {
   }
 }
 
-
-
 /* Custom Icons for Skills */
 .custom-icon {
   width: 60%;
   height: 60%;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(39%) sepia(57%) saturate(1237%) hue-rotate(230deg) brightness(90%) contrast(85%);
+  filter: brightness(0) saturate(100%) invert(39%) sepia(57%) saturate(1237%)
+    hue-rotate(230deg) brightness(90%) contrast(85%);
   transition: var(--transition);
 }
 
 .skill-item:hover .custom-icon {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 /* Adjust icon sizes for smaller screens */
