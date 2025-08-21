@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Update the copyright year automatically
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear + " ";
+  }
+
   // Mobile menu toggle
   const menuIcon = document.querySelector(".menu-icon");
   const navList = document.querySelector(".nav-list");
