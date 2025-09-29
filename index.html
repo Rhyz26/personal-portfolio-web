@@ -1420,7 +1420,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.0.3/dist/email.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const year = new Date().getFullYear();
@@ -1545,18 +1545,13 @@
       // EmailJS Form Submission
       const form = document.getElementById('contact-form');
       if (form) {
-        emailjs.init("W9VaMI34BvfXODAKP"); // Your EmailJS Public Key
         form.addEventListener('submit', function (e) {
           e.preventDefault();
-          emailjs.send("service_mfglbju", "template_yc5g84m", {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value,
-          })
-            .then(function () {
+          emailjs.sendForm("service_mfglbju", "template_yc5g84m", form, "W9VaMI34BvfXODAKP")
+            .then(function (response) {
               document.getElementById('form-status').textContent = 'Message sent successfully!';
               form.reset();
+              console.log('Email sent successfully:', response);
             }, function (error) {
               document.getElementById('form-status').textContent = 'Failed to send message. Please try again.';
               console.error('EmailJS error:', error);
